@@ -27,6 +27,8 @@
 - OverloadedStrings
 - RecursiveDo
 - ScopedTypeVariables
+    - https://wiki.haskell.org/Scoped_type_variables
+    - https://prime.haskell.org/wiki/ScopedTypeVariables<Paste>
 - TypeFamilies
 - TypeSynonymInstances
 - UndecidableInstances
