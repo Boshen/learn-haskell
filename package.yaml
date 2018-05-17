@@ -8,9 +8,10 @@ copyright:           "2018 Boshen"
 
 dependencies:
 - base >= 4.7 && < 5
+- QuickCheck
+- comonad
 - hspec
 - random
-- QuickCheck
 
 tests:
   learn-haskell-test:
