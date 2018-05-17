@@ -9,7 +9,7 @@ import Test.Hspec
 testScopedTypeVariables :: IO ()
 testScopedTypeVariables = hspec $ do
     describe "ScopedTypeVariables" $ do
-        it "compiles" $ do
+        specify "compiles" $ do
             mkpair1 1 2 `shouldBe` (1, 2)
             mkpairFree 1 2 `shouldBe` (1, 2)
 

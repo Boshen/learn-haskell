@@ -8,7 +8,10 @@
 - MonadPlus
 - MonadFree
 - [Comonad](https://hackage.haskell.org/package/comonad)
-    - [Conway's game of life](http://javran.github.io/posts/2014-08-22-comonad-zipper-and-conways-game-of-life.html)
+    - https://bartoszmilewski.com/2017/01/02/comonads/
+    - instances: Stream, Zipper
+    - applications:
+        - [Conway's game of life](http://javran.github.io/posts/2014-08-22-comonad-zipper-and-conways-game-of-life.html)
 
 # Common Libraries
 - [random](https://hackage.haskell.org/package/random-1.1/docs/System-Random.html)
@@ -18,7 +21,7 @@
 
 # Data Structures
 - Zipper
-    - [Conway's game of life](http://javran.github.io/posts/2014-08-22-comonad-zipper-and-conways-game-of-life.html)
+    - http://blog.ezyang.com/2010/04/you-could-have-invented-zippers/
 
 # Category Theory
 - [Duality](http://blog.ezyang.com/2012/10/duality-for-haskellers/)
@@ -37,7 +40,7 @@
 - RecursiveDo
 - ScopedTypeVariables
     - https://wiki.haskell.org/Scoped_type_variables
-    - https://prime.haskell.org/wiki/ScopedTypeVariables<Paste>
+    - https://prime.haskell.org/wiki/ScopedTypeVariables
 - TypeFamilies
 - TypeSynonymInstances
 - UndecidableInstances

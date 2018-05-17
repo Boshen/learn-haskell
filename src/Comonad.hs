@@ -1,5 +1,3 @@
-{-# LANGUAGE InstanceSigs #-}
-
 module Comonad where
 
 import Control.Comonad
@@ -11,13 +9,8 @@ instance Functor Stream where
   fmap f (Cons x xs) = Cons (f x) (fmap f xs)
 
 instance Comonad Stream where
-  extract :: Stream a -> a
   extract (Cons x _) = x
-
-  duplicate :: Stream a -> Stream (Stream a)
   duplicate s@(Cons _ xs) = Cons s (duplicate xs)
-
-  extend :: (Stream a -> b) -> Stream a -> Stream b
   extend f s@(Cons _ xs) = Cons (f s) (extend f xs)
 
 repeatS :: a -> Stream a
@@ -44,11 +37,11 @@ movingAvg n = extend (average n)
 testComonad :: IO ()
 testComonad = hspec $ do
     describe "Comonad Stream" $ do
-        it "extract" $ do
+        specify "extract" $ do
             s <- return $ repeatS 1
             extract s `shouldBe` 1
 
-        it "extend" $ do
+        specify "extend" $ do
             s <- return $ cycleS [1, 2, 3]
             sumS 3 s `shouldBe` 6
             average 3 s `shouldBe` 2
