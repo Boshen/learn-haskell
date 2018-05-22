@@ -1,6 +1,6 @@
 # Learn Haskell
 
-# Monads
+# [Monads](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html)
 - Reader
 - Writer
 - State
@@ -12,6 +12,10 @@
     - instances: Stream, Zipper
     - applications:
         - [Conway's game of life](http://javran.github.io/posts/2014-08-22-comonad-zipper-and-conways-game-of-life.html)
+
+- base
+    - Data.Coerce
+        - https://wiki.haskell.org/GHC/Coercible
 
 # Common Libraries
 - [random](https://hackage.haskell.org/package/random-1.1/docs/System-Random.html)
