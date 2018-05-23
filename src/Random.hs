@@ -17,8 +17,8 @@ instance Random Coin where
 
 seed = 0
 
-testRandom :: IO ()
-testRandom = hspec $ do
+testRandom :: Spec
+testRandom = do
     describe "System.Random" $ do
         specify "randomR" $ do
             (r :: Int, g') <- return $ randomR (0, 10) (mkStdGen seed)

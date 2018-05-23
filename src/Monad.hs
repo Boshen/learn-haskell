@@ -39,8 +39,8 @@ takeS n ~(Cons x xs)
   | n > 0     =  x : (takeS (n - 1) xs)
   | otherwise = error "Stream.take: negative argument."
 
-testMonad :: IO ()
-testMonad = hspec $ do
+testMonad :: Spec
+testMonad =
     describe "Stream" $ do
         specify "Functor" $ do
             xs <- return $ repeatS 1

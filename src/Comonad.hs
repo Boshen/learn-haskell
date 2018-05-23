@@ -34,15 +34,14 @@ average n s = (sumS n s) / (fromIntegral n)
 movingAvg :: Fractional a => Int -> Stream a -> Stream a
 movingAvg n = extend (average n)
 
-testComonad :: IO ()
-testComonad = hspec $ do
-    describe "Comonad Stream" $ do
-        specify "extract" $ do
-            s <- return $ repeatS 1
-            extract s `shouldBe` 1
+testComonad :: Spec
+testComonad = describe "Comonad Stream" $ do
+    specify "extract" $ do
+        s <- return $ repeatS 1
+        extract s `shouldBe` 1
 
-        specify "extend" $ do
-            s <- return $ cycleS [1, 2, 3]
-            sumS 3 s `shouldBe` 6
-            average 3 s `shouldBe` 2
-            takeS 3 (movingAvg 3 s) `shouldBe` [2.0, 2.0, 2.0]
+    specify "extend" $ do
+        s <- return $ cycleS [1, 2, 3]
+        sumS 3 s `shouldBe` 6
+        average 3 s `shouldBe` 2
+        takeS 3 (movingAvg 3 s) `shouldBe` [2.0, 2.0, 2.0]

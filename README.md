@@ -14,6 +14,8 @@
     - instances: Stream, Zipper
     - applications:
         - [Conway's game of life](http://javran.github.io/posts/2014-08-22-comonad-zipper-and-conways-game-of-life.html)
+- Monad Transformer
+    - https://page.mi.fu-berlin.de/scravy/realworldhaskell/materialien/monad-transformers-step-by-step.pdf
 
 - base
     - Data.Coerce

@@ -36,8 +36,8 @@ sumSurround (LZ _ x (r:_)) = x + r
 sumSurround (LZ (l:_) x _) = l + x
 sumSurround (LZ _ x _) = x
 
-testZipper :: IO ()
-testZipper = hspec $ do
+testZipper :: Spec
+testZipper =
     describe "ListZipper" $ do
         specify "fmap" $ do
             (*2) <$> (LZ [3] 2 [1]) `shouldBe` (LZ [6] 4 [2])

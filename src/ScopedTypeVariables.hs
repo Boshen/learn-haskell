@@ -6,8 +6,8 @@ import Test.Hspec
 
 -- allow free type variables to be re-used in the scope of a function
 
-testScopedTypeVariables :: IO ()
-testScopedTypeVariables = hspec $ do
+testScopedTypeVariables :: Spec
+testScopedTypeVariables =
     describe "ScopedTypeVariables" $ do
         specify "compiles" $ do
             mkpair1 1 2 `shouldBe` (1, 2)
