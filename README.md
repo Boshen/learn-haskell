@@ -1,6 +1,8 @@
 # Learn Haskell
 
-# [Monads](http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html)
+# Monads
+    - http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html
+    - http://www.stephendiehl.com/posts/monads.html
 - Reader
 - Writer
 - State
@@ -29,6 +31,7 @@
 
 # Category Theory
 - [Duality](http://blog.ezyang.com/2012/10/duality-for-haskellers/)
+- http://www.haskellforall.com/2012/08/the-category-design-pattern.html
 
 # Language Extensions
 - BangPatterns

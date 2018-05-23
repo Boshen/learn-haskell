@@ -1,5 +1,6 @@
 module Monad where
 
+import Control.Monad
 import Test.Hspec
 
 data Stream a = Cons a (Stream a) deriving (Eq, Ord)
@@ -29,6 +30,9 @@ repeatS x = Cons x (repeatS x)
 cycleS :: [a] -> Stream a
 cycleS xs = foldr Cons (cycleS xs) xs
 
+iterateS :: (a -> a) -> a -> Stream a
+iterateS f x = Cons x (iterateS f (f x))
+
 takeS :: Int -> Stream a -> [a]
 takeS n ~(Cons x xs)
   | n == 0    = []
@@ -50,3 +54,6 @@ testMonad = hspec $ do
         specify "Monad" $ do
             xs <- return $ cycleS [1,2,3]
             takeS 8 (xs >>= repeatS) `shouldBe` [1,2,3,1,2,3,1,2]
+
+        specify "<=<" $ do
+            takeS 8 (iterateS (*2) <=< repeatS $ 1) `shouldBe` [1,2,4,8,16,32,64,128]
