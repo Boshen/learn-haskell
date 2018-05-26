@@ -6,6 +6,7 @@ import Monad (testMonad)
 import Comonad (testComonad)
 import Zipper (testZipper)
 import Transformers (testTransformers)
+import Extensions (testExtensions)
 
 main :: IO ()
 main = hspec $ do
@@ -15,3 +16,4 @@ main = hspec $ do
     testComonad
     testZipper
     testTransformers
+    testExtensions

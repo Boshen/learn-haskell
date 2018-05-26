@@ -36,20 +36,69 @@
 - http://www.haskellforall.com/2012/08/the-category-design-pattern.html
 
 # Language Extensions
-- BangPatterns
-- DeriveGeneric
-- FlexibleContexts
-- FlexibleInstances
-- FunctionalDependencies
-- GADTs
-- GeneralizedNewtypeDeriving
-- MultiParamTypeClasses
-- NoMonomorphismRestriction
-- OverloadedStrings
-- RecursiveDo
-- ScopedTypeVariables
-    - https://wiki.haskell.org/Scoped_type_variables
-    - https://prime.haskell.org/wiki/ScopedTypeVariables
-- TypeFamilies
-- TypeSynonymInstances
-- UndecidableInstances
+- Safe Extensions
+  - BangPatterns
+  - DeriveGeneric
+  - FunctionalDependencies
+  - GADTs
+  - GeneralizedNewtypeDeriving
+  - NoMonomorphismRestriction
+  - OverloadedStrings
+  - RecursiveDo
+  - ScopedTypeVariables
+      - https://wiki.haskell.org/Scoped_type_variables
+      - https://prime.haskell.org/wiki/ScopedTypeVariables
+  - TypeFamilies
+  - TypeSynonymInstances
+  - UndecidableInstances
+
+- Type Classes
+  - MINIMAL
+  - FlexibleInstances
+  - FlexibleContexts
+  - MultiParamTypeClasses
+  - InstanceSigs
+
+- Others
+  - ExtendedDefaultRules
+  - ViewPatterns
+  - Safe
+  - Trustworthy
+  - PartialTypeSignature
+  - DoRec
+  - ApplicativeDo
+  - PatternGuards
+  - TupleSections
+  - MultiWayIf
+  - EmptyCase
+  - LambdaCase
+  - NumDecimals
+  - PackageImports
+  - RecordWildCards
+  - NamedFieldPuns
+  - PatternSynonyms
+  - DeriveTraversable
+  - DeriveFoldable
+	- DeriveFunctor
+	- DeriveGeneric
+	- DeriveAnyClass
+	- StaticPointers
+	- DuplicateRecordFields
+	- OverloadedLabels
+  - CPP
+
+- Dangerous Extensions
+    - DatatypeContexts
+    - OverlappingInstances
+    - IncoherentInstances
+    - ImpredicativeTypes
+    - AllowAmbigiousTypes
+
+- Historical Extensions
+  - Rank2Types -> RankNTypes
+  - XPolymorphicComponents
+  - NPlusKPatterns
+  - TraditionalRecordSyntax
+  - OverlappingInstances
+  - IncoherentInstances
+  - NullaryTypeClasses
