@@ -7,13 +7,17 @@
 - Writer
 - State
 - MonadFix
-- MonadPlus
+- [MonadPlus](http://hackage.haskell.org/package/base-4.11.1.0/docs/Control-Monad.html#t:MonadPlus)
+    - https://blog.jle.im/entry/practical-fun-with-monads-introducing-monadplus.html
 - MonadFree
 - [Comonad](https://hackage.haskell.org/package/comonad)
     - https://bartoszmilewski.com/2017/01/02/comonads/
+    - https://functorial.com/the-future-is-comonadic/main.pdf
     - instances: Stream, Zipper
     - applications:
         - [Conway's game of life](http://javran.github.io/posts/2014-08-22-comonad-zipper-and-conways-game-of-life.html)
+        - [Image Processing](https://jaspervdj.be/posts/2014-11-27-comonads-image-processing.html)
+        - [UI](https://speakerd.s3.amazonaws.com/presentations/febc965f713743f18d8d942642e08d72/The_Future_Is_Comonadic_.pdf)
 - Monad Transformer
     - https://page.mi.fu-berlin.de/scravy/realworldhaskell/materialien/monad-transformers-step-by-step.pdf
 
@@ -26,6 +30,21 @@
     - https://en.wikibooks.org/wiki/Haskell/Libraries/Random
     - https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/randoms
     - [Gen Monad](https://hackage.haskell.org/package/QuickCheck-2.11.3/docs/Test-QuickCheck-Gen.html)
+async
+- bytestring
+- containers
+- mtl
+- stm
+- text
+- transformers
+- unordered-containers • vector
+- filepath
+- directory
+- containers
+- process
+- unix
+- deepseq
+- optparse-applicative
 
 # Data Structures
 - Zipper
