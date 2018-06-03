@@ -59,25 +59,28 @@
 
 # Language Extensions
 ### Safe Extensions
-  - BangPatterns
-  - FunctionalDependencies
-  - GeneralizedNewtypeDeriving
   - NoMonomorphismRestriction
   - OverloadedStrings
-  - RecursiveDo
-  - TypeFamilies
   - TypeSynonymInstances
   - UndecidableInstances
 
 - Types
     - RankNTypes
         - https://ocharles.org.uk/blog/guest-posts/2014-12-18-rank-n-types.html
-    - ExistentialQuantification
-        - https://en.wikibooks.org/wiki/Haskell/Existentially_quantified_types
     - ScopedTypeVariables
         - https://wiki.haskell.org/Scoped_type_variables
         - https://prime.haskell.org/wiki/ScopedTypeVariables
+    - TypeApplications
+    - ConstraintKinds
+
+    - ExistentialQuantification
+        - https://en.wikibooks.org/wiki/Haskell/Existentially_quantified_types
+    - FunctionalDependencies
     - GADTs
+
+    - DataKinds
+    - TypeFamilies
+    - TypeFamilyDependencies
 
 - Type Classes
   - MINIMAL
@@ -87,34 +90,46 @@
   - InstanceSigs
 
 - Derive
-  - DeriveTraversable
-  - DeriveFoldable
-	- DeriveFunctor
-	- DeriveGeneric
-	- DeriveAnyClass
+    - DeriveFoldable
+    - DeriveFunctor
+    - DeriveGeneric
+    - DeriveLift
+    - DeriveTraversable
+    - DerivingStrategies
+    - GeneralizedNewtypeDeriving
+    - StandaloneDeriving
+
+- Syntax
+  - LambdaCase
+  - MultiWayIf
+  - NamedFieldPuns
+  - TupleSections
+
+  - BangPatterns
+  - KindSignatures
+  - TypeOperators
+
+  - RecursiveDo
+  - ApplicativeDo
+  - DefaultSignatures
+  - PatternSynonyms
 
 - Others
-  - ExtendedDefaultRules
-  - ViewPatterns
-  - Safe
-  - Trustworthy
-  - PartialTypeSignature
-  - DoRec
-  - ApplicativeDo
-  - PatternGuards
-  - TupleSections
-  - MultiWayIf
-  - EmptyCase
-  - LambdaCase
-  - NumDecimals
-  - PackageImports
-  - RecordWildCards
-  - NamedFieldPuns
-  - PatternSynonyms
-	- StaticPointers
 	- DuplicateRecordFields
 	- OverloadedLabels
+	- StaticPointers
   - CPP
+  - DoRec
+  - EmptyCase
+  - ExtendedDefaultRules
+  - NumDecimals
+  - PackageImports
+  - PartialTypeSignature
+  - PatternGuards
+  - RecordWildCards
+  - Safe
+  - Trustworthy
+  - ViewPatterns
 
 ### Dangerous Extensions
   - DatatypeContexts
