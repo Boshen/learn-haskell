@@ -73,6 +73,7 @@
     - RankNTypes
         - https://ocharles.org.uk/blog/guest-posts/2014-12-18-rank-n-types.html
     - ExistentialQuantification
+        - https://en.wikibooks.org/wiki/Haskell/Existentially_quantified_types
     - ScopedTypeVariables
         - https://wiki.haskell.org/Scoped_type_variables
         - https://prime.haskell.org/wiki/ScopedTypeVariables
