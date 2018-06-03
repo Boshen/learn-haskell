@@ -10,10 +10,10 @@ instance Show ShowBox where
     show (SB s) = show s
 
 heteroList :: [ShowBox]
-heteroList = [SB 5, SB True, SB "test"]
+heteroList = [SB 5, SB True, SB ()]
 
 testExistentialQuantification :: Spec
 testExistentialQuantification = do
     describe "ExistentialQuantification" $ do
         specify "" $ do
-            fmap show heteroList `shouldBe` [] -- ??? how do I make this work ???
+            fmap show heteroList `shouldBe` ["5", "True", "()"]

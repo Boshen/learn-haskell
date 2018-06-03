@@ -8,6 +8,7 @@ import Zipper (testZipper)
 import Transformers (testTransformers)
 import Extensions (testExtensions)
 import RankNTypes (testRankNTypes)
+import ExistentialQuantification (testExistentialQuantification)
 
 main :: IO ()
 main = hspec $ do
@@ -19,3 +20,4 @@ main = hspec $ do
     testTransformers
     testExtensions
     testRankNTypes
+    testExistentialQuantification
