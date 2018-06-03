@@ -7,6 +7,7 @@ import Comonad (testComonad)
 import Zipper (testZipper)
 import Transformers (testTransformers)
 import Extensions (testExtensions)
+import RankNTypes (testRankNTypes)
 
 main :: IO ()
 main = hspec $ do
@@ -17,3 +18,4 @@ main = hspec $ do
     testZipper
     testTransformers
     testExtensions
+    testRankNTypes

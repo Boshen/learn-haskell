@@ -32,6 +32,7 @@
     - [Gen Monad](https://hackage.haskell.org/package/QuickCheck-2.11.3/docs/Test-QuickCheck-Gen.html)
 - lens
     - https://github.com/Gabriel439/Haskell-Lens-Tutorial-Library/blob/master/src/Control/Lens/Tutorial.hs
+    - https://twanvl.nl/blog/haskell/cps-functional-references
 - async
 - bytestring
 - containers
@@ -57,20 +58,25 @@
 - http://www.haskellforall.com/2012/08/the-category-design-pattern.html
 
 # Language Extensions
-- Safe Extensions
+### Safe Extensions
   - BangPatterns
   - FunctionalDependencies
-  - GADTs
   - GeneralizedNewtypeDeriving
   - NoMonomorphismRestriction
   - OverloadedStrings
   - RecursiveDo
-  - ScopedTypeVariables
-      - https://wiki.haskell.org/Scoped_type_variables
-      - https://prime.haskell.org/wiki/ScopedTypeVariables
   - TypeFamilies
   - TypeSynonymInstances
   - UndecidableInstances
+
+- Types
+    - RankNTypes
+        - https://ocharles.org.uk/blog/guest-posts/2014-12-18-rank-n-types.html
+    - ExistentialQuantification
+    - ScopedTypeVariables
+        - https://wiki.haskell.org/Scoped_type_variables
+        - https://prime.haskell.org/wiki/ScopedTypeVariables
+    - GADTs
 
 - Type Classes
   - MINIMAL
@@ -109,14 +115,14 @@
 	- OverloadedLabels
   - CPP
 
-- Dangerous Extensions
-    - DatatypeContexts
-    - OverlappingInstances
-    - IncoherentInstances
-    - ImpredicativeTypes
-    - AllowAmbigiousTypes
+### Dangerous Extensions
+  - DatatypeContexts
+  - OverlappingInstances
+  - IncoherentInstances
+  - ImpredicativeTypes
+  - AllowAmbigiousTypes
 
-- Historical Extensions
+### Historical Extensions
   - Rank2Types -> RankNTypes
   - XPolymorphicComponents
   - NPlusKPatterns
