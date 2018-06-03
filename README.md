@@ -30,7 +30,9 @@
     - https://en.wikibooks.org/wiki/Haskell/Libraries/Random
     - https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/randoms
     - [Gen Monad](https://hackage.haskell.org/package/QuickCheck-2.11.3/docs/Test-QuickCheck-Gen.html)
-async
+- lens
+    - https://github.com/Gabriel439/Haskell-Lens-Tutorial-Library/blob/master/src/Control/Lens/Tutorial.hs
+- async
 - bytestring
 - containers
 - mtl
@@ -57,7 +59,6 @@ async
 # Language Extensions
 - Safe Extensions
   - BangPatterns
-  - DeriveGeneric
   - FunctionalDependencies
   - GADTs
   - GeneralizedNewtypeDeriving
@@ -78,6 +79,13 @@ async
   - MultiParamTypeClasses
   - InstanceSigs
 
+- Derive
+  - DeriveTraversable
+  - DeriveFoldable
+	- DeriveFunctor
+	- DeriveGeneric
+	- DeriveAnyClass
+
 - Others
   - ExtendedDefaultRules
   - ViewPatterns
@@ -96,11 +104,6 @@ async
   - RecordWildCards
   - NamedFieldPuns
   - PatternSynonyms
-  - DeriveTraversable
-  - DeriveFoldable
-	- DeriveFunctor
-	- DeriveGeneric
-	- DeriveAnyClass
 	- StaticPointers
 	- DuplicateRecordFields
 	- OverloadedLabels
