@@ -9,6 +9,7 @@ import Transformers (testTransformers)
 import Extensions (testExtensions)
 import RankNTypes (testRankNTypes)
 import ExistentialQuantification (testExistentialQuantification)
+import Parallel (testParallel)
 
 main :: IO ()
 main = hspec $ do
@@ -21,3 +22,4 @@ main = hspec $ do
     testExtensions
     testRankNTypes
     testExistentialQuantification
+    testParallel
