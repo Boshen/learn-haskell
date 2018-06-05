@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/Boshen/learn-haskell/tree/master.svg?style=svg)](https://circleci.com/gh/Boshen/learn-haskell/tree/master)
+
 # Learn Haskell
 
 # Monads
