@@ -3,12 +3,11 @@ jobs:
   build:
     machine: true
     steps:
+      - checkout
+
       - restore_cache:
           keys:
-            - stack-{{ checksum "stack.yaml" }}-{{ checksum "project.cabal" }}
-            - stack-{{ checksum "stack.yaml" }}
-
-      - checkout
+            - stack-{{ checksum "package.yaml" }}
 
       - run: wget https://github.com/commercialhaskell/stack/releases/download/v1.7.1/stack-1.7.1-linux-x86_64.tar.gz -O /tmp/stack.tar.gz
       - run: sudo mkdir /tmp/stack-download
@@ -19,13 +18,9 @@ jobs:
       - run: stack test
 
       - save_cache:
-          key: stack-{{ checksum "stack.yaml" }}
+          key: stack-{{ checksum "package.yaml" }}
           paths:
             - "~/.stack"
-
-      - save_cache:
-          key: stack-{{ checksum "stack.yaml" }}-{{ checksum "project.cabal" }}
-          paths:
             - ".stack-work"
 
 workflows:
