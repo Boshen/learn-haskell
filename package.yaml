@@ -15,6 +15,7 @@ dependencies:
 - mtl
 - containers
 - parallel
+- monad-par
 
 tests:
   learn-haskell-test:
