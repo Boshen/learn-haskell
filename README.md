@@ -3,8 +3,8 @@
 # Learn Haskell
 
 # Monads
-    - http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html
-    - http://www.stephendiehl.com/posts/monads.html
+- http://blog.sigfpe.com/2006/08/you-could-have-invented-monads-and.html
+- http://www.stephendiehl.com/posts/monads.html
 - Reader
 - Writer
 - State
@@ -54,6 +54,11 @@
 # Data Structures
 - Zipper
     - http://blog.ezyang.com/2010/04/you-could-have-invented-zippers/
+
+- Parallel Programming
+    - [parallel](https://hackage.haskell.org/package/parallel)
+    - [Monad Par](https://hackage.haskell.org/package/monad-par)
+    - [repa](https://hackage.haskell.org/package/repa)
 
 # Category Theory
 - [Duality](http://blog.ezyang.com/2012/10/duality-for-haskellers/)
