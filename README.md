@@ -57,10 +57,15 @@
 ## Data Structures
   - Zipper
       - http://blog.ezyang.com/2010/04/you-could-have-invented-zippers/
-  - Parallel Programming
-      - [parallel](https://hackage.haskell.org/package/parallel)
-      - [Monad Par](https://hackage.haskell.org/package/monad-par)
-      - [repa](https://hackage.haskell.org/package/repa)
+
+## Parallel Programming
+  - [parallel](https://hackage.haskell.org/package/parallel)
+  - [Monad Par](https://hackage.haskell.org/package/monad-par)
+  - [repa](https://hackage.haskell.org/package/repa)
+
+## Testing
+  - [QuickCheck](https://hackage.haskell.org/package/QuickCheck) for property testing
+  - [smallcheck](http://hackage.haskell.org/package/smallcheck)  forproperty testing
 
 ## Category Theory
   - [Duality](http://blog.ezyang.com/2012/10/duality-for-haskellers/)
