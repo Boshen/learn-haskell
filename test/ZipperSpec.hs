@@ -1,4 +1,4 @@
-module Zipper where
+module ZipperSpec where
 
 import Control.Comonad
 import Control.Exception
@@ -36,8 +36,8 @@ sumSurround (LZ _ x (r:_)) = x + r
 sumSurround (LZ (l:_) x _) = l + x
 sumSurround (LZ _ x _) = x
 
-testZipper :: Spec
-testZipper =
+spec :: Spec
+spec =
     describe "ListZipper" $ do
         specify "fmap" $ do
             (*2) <$> (LZ [3] 2 [1]) `shouldBe` (LZ [6] 4 [2])

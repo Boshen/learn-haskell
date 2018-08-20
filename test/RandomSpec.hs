@@ -1,6 +1,6 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
-module Random where
+module RandomSpec where
 
 import System.Random
 import Test.Hspec
@@ -17,8 +17,8 @@ instance Random Coin where
 
 seed = 0
 
-testRandom :: Spec
-testRandom = do
+spec :: Spec
+spec = do
     describe "System.Random" $ do
         specify "randomR" $ do
             (r :: Int, g') <- return $ randomR (0, 10) (mkStdGen seed)

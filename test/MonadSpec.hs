@@ -1,4 +1,4 @@
-module Monad where
+module MonadSpec where
 
 import Control.Monad
 import Test.Hspec
@@ -39,8 +39,8 @@ takeS n ~(Cons x xs)
   | n > 0     =  x : (takeS (n - 1) xs)
   | otherwise = error "Stream.take: negative argument."
 
-testMonad :: Spec
-testMonad =
+spec :: Spec
+spec =
     describe "Stream" $ do
         specify "Functor" $ do
             xs <- return $ repeatS 1

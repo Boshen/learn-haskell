@@ -1,4 +1,4 @@
-module Comonad where
+module ComonadSpec where
 
 import Control.Comonad
 import Test.Hspec
@@ -34,8 +34,8 @@ average n s = (sumS n s) / (fromIntegral n)
 movingAvg :: Fractional a => Int -> Stream a -> Stream a
 movingAvg n = extend (average n)
 
-testComonad :: Spec
-testComonad = describe "Comonad Stream" $ do
+spec :: Spec
+spec = describe "Comonad Stream" $ do
     specify "extract" $ do
         s <- return $ repeatS 1
         extract s `shouldBe` 1

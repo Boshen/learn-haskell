@@ -8,13 +8,13 @@
 {-# LANGUAGE MultiParamTypeClasses #-}
 {-# LANGUAGE InstanceSigs #-}
 
-module Extensions where
+module ExtensionsSpec where
 
 import Test.Hspec
 import qualified Data.Map as Map
 
-testExtensions :: Spec
-testExtensions = do
+spec :: Spec
+spec = do
     describe "OtherExtensions" $ do
         specify "PatternGuards" $ do
             testPatternGuard Map.empty "1" "2" `shouldBe` 0

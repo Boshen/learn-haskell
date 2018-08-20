@@ -1,6 +1,6 @@
 {-# LANGUAGE ExistentialQuantification #-}
 
-module ExistentialQuantification where
+module ExistentialQuantificationSpec where
 
 import Test.Hspec
 
@@ -12,8 +12,8 @@ instance Show ShowBox where
 heteroList :: [ShowBox]
 heteroList = [SB 5, SB True, SB ()]
 
-testExistentialQuantification :: Spec
-testExistentialQuantification = do
+spec :: Spec
+spec = do
     describe "ExistentialQuantification" $ do
         specify "" $ do
             fmap show heteroList `shouldBe` ["5", "True", "()"]

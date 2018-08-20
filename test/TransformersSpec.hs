@@ -1,4 +1,4 @@
-module Transformers where
+module TransformersSpec where
 
 -- https://page.mi.fu-berlin.de/scravy/realworldhaskell/materialien/monad-transformers-step-by-step.pdf
 
@@ -225,8 +225,8 @@ exampleExp = Lit 12 `Plus` (App (Abs "x" (Var "x")) (Lit 4 `Plus` Lit 2))
 
 errorExp = Plus (Lit 1) (Abs "x" (Var "x"))
 
-testTransformers :: Spec
-testTransformers =
+spec :: Spec
+spec =
     describe "Transformers" $ do
         specify "base" $ do
             eval0 Map.empty exampleExp `shouldBe` (IntVal 18)

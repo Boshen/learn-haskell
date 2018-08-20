@@ -1,4 +1,4 @@
-module Parallel where
+module ParallelSpec where
 
 import Test.Hspec
 import Control.Parallel.Strategies
@@ -32,8 +32,8 @@ parmap f as = do
     ibs <- mapM (spawn . return . f) as
     mapM get ibs
 
-testParallel :: Spec
-testParallel =
+spec :: Spec
+spec =
     describe "Parallel" $ do
         specify "Eval Monad" $ do
             (runEval $ testEval 1 10) `shouldBe` (1, 55)

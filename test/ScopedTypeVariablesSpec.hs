@@ -1,13 +1,13 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 
-module ScopedTypeVariables where
+module ScopedTypeVariablesSpec where
 
 import Test.Hspec
 
 -- allow free type variables to be re-used in the scope of a function
 
-testScopedTypeVariables :: Spec
-testScopedTypeVariables =
+spec :: Spec
+spec =
     describe "ScopedTypeVariables" $ do
         specify "compiles" $ do
             mkpair1 1 2 `shouldBe` (1, 2)

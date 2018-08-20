@@ -19,8 +19,8 @@ dependencies:
 
 tests:
   learn-haskell-test:
-    main: Main.hs
-    source-dirs: src
+    main: Spec.hs
+    source-dirs: test
     ghc-options:
     - -threaded
     - -rtsopts

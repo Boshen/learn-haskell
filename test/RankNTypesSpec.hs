@@ -1,7 +1,7 @@
 {-# LANGUAGE ExplicitForAll #-}
 {-# LANGUAGE RankNTypes #-}
 
-module RankNTypes where
+module RankNTypesSpec where
 
 import Prelude hiding (id, fst, snd)
 
@@ -55,8 +55,8 @@ curry p = \a b -> p $ fromPair (a, b)
 uncurry :: (a -> b -> c) -> (SPair a b -> c)
 uncurry f = \(SPair p) -> p f
 
-testRankNTypes :: Spec
-testRankNTypes = do
+spec :: Spec
+spec = do
     describe "RankNTypes" $ do
         specify "" $ do
             intId 1 `shouldBe` 1
