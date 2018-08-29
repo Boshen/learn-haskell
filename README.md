@@ -39,6 +39,8 @@
       - https://twanvl.nl/blog/haskell/cps-functional-references
   - async
   - bytestring
+      - https://haskell-lang.org/tutorial/string-types
+      - https://ocharles.org.uk/posts/2014-12-17-overloaded-strings.html
   - containers
   - mtl
   - stm
@@ -70,6 +72,12 @@
 ## Category Theory
   - [Duality](http://blog.ezyang.com/2012/10/duality-for-haskellers/)
   - http://www.haskellforall.com/2012/08/the-category-design-pattern.html
+
+## Type System
+  - Hindley Milner
+      - http://akgupta.ca/blog/2013/05/14/so-you-still-dont-understand-hindley-milner/
+      - https://stackoverflow.com/questions/12532552/what-part-of-hindley-milner-do-you-not-understand
+      - http://dev.stephendiehl.com/fun/006_hindley_milner.html
 
 ## Language Extensions
   - Types
