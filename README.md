@@ -28,6 +28,8 @@
   - base
       - Data.Coerce
           - https://wiki.haskell.org/GHC/Coercible
+  - [Covariance and Contravariance](https://www.fpcomplete.com/blog/2016/11/covariance-contravariance)
+
 
 ## Common Libraries
   - [random](https://hackage.haskell.org/package/random-1.1/docs/System-Random.html)
@@ -68,18 +70,41 @@
 ## Testing
   - [QuickCheck](https://hackage.haskell.org/package/QuickCheck) for property testing
   - [smallcheck](http://hackage.haskell.org/package/smallcheck)  forproperty testing
+  - hspec
 
 ## Category Theory
   - [Duality](http://blog.ezyang.com/2012/10/duality-for-haskellers/)
   - http://www.haskellforall.com/2012/08/the-category-design-pattern.html
 
 ## Type System
+  - Lambda Calculus
+      - http://palmstroem.blogspot.com/2012/05/lambda-calculus-for-absolute-dummies.html
   - Hindley Milner
       - http://akgupta.ca/blog/2013/05/14/so-you-still-dont-understand-hindley-milner/
       - https://stackoverflow.com/questions/12532552/what-part-of-hindley-milner-do-you-not-understand
       - http://dev.stephendiehl.com/fun/006_hindley_milner.html
 
-## Language Extensions
+## Web Development
+- Yesod
+- Servant
+
+## Compiler Development
+
+## Tools
+- interio
+- ghcid
+- hlint
+- hindent
+- ghc-mod
+
+## Type Level Stuff
+- [Haskell's kind system - a primer](https://diogocastro.com/blog/2018/10/17/haskells-kind-system-a-primer/)
+- [https://www.parsonsmatt.org/2017/04/26/basic_type_level_programming_in_haskell.html](https://www.parsonsmatt.org/2017/04/26/basic_type_level_programming_in_haskell.html)
+
+## Type classes
+- https://wiki.haskell.org/Typeclassopedia
+
+## [Language Extensions](https://www.schoolofhaskell.com/school/to-infinity-and-beyond/pick-of-the-week/guide-to-ghc-extensions)
   - Types
     - RankNTypes
         - https://ocharles.org.uk/blog/guest-posts/2014-12-18-rank-n-types.html
@@ -156,3 +181,19 @@
       - OverlappingInstances
       - IncoherentInstances
       - NullaryTypeClasses
+
+# Blogs to follow
+- https://github.com/quchen/articles
+- https://www.parsonsmatt.org/
+
+# People to follow
+
+# Books
+- https://leanpub.com/thinking-with-types/
+
+# Programs to practice on
+- irc
+- raytracing
+- mandelbrot
+- unix command line utilities
+- https://www.codewars.com/kata/search/haskell
