@@ -55,7 +55,7 @@
   - containers
   - process
   - unix
-  - deepseq
+  - deepseq (prevent resource leaks in lazy IO programs)
   - optparse-applicative
 
 ## Data Structures
@@ -89,6 +89,9 @@
 - Servant
 
 ## Compiler Development
+
+### Parsing
+- [Monadic Parsing in Haskell](http://eprints.nottingham.ac.uk/223/1/pearl.pdf)
 
 ## Tools
 - interio
@@ -185,6 +188,7 @@
 # Blogs to follow
 - https://github.com/quchen/articles
 - https://www.parsonsmatt.org/
+- https://apfelmus.nfshost.com/about.html
 
 # People to follow
 
